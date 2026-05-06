@@ -2,7 +2,7 @@
 #BSUB -J blosc-job-script
 #BSUB -q hpc
 #BSUB -W 5
-#BSUB -R "rusage[mem=512MB]"
+#BSUB -R "rusage[mem=2G]"
 #BSUB -R "select[model == XeonGold6226R]"
 #BSUB -n 1
 #BSUB -o blosc-job-script_%J.out
