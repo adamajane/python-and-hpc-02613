@@ -1,0 +1,53 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 28050209: <sleeper_4> in cluster <dcc> Done
+
+Job <sleeper_4> was submitted from host <n-62-30-2> by user <s211048> in cluster <dcc> at Tue Mar 17 14:25:11 2026
+Job was executed on host(s) <4*n-62-30-25>, in queue <hpc>, as user <s211048> in cluster <dcc> at Tue Mar 17 14:25:12 2026
+</zhome/1a/2/161189> was used as the home directory.
+</zhome/1a/2/161189/VSCodeProjects/02613-python-and-hpc/week_1_introduction/job-script-4> was used as the working directory.
+Started at Tue Mar 17 14:25:12 2026
+Terminated at Tue Mar 17 14:26:13 2026
+Results reported at Tue Mar 17 14:26:13 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+#BSUB -J sleeper_4
+#BSUB -q hpc
+#BSUB -W 2
+#BSUB -R "rusage[mem=512MB]"
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -o sleeper_%J.out
+#BSUB -e sleeper_%J.err
+
+sleep 60
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.99 sec.
+    Max Memory :                                 7 MB
+    Average Memory :                             7.00 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               2041.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   68 sec.
+    Turnaround time :                            62 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <sleeper_28050209.err> for stderr output of this job.
+
