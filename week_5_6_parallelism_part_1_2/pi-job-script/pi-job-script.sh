@@ -13,10 +13,10 @@ source /dtu/projects/02613_2025/conda/conda_init.sh
 conda activate 02613_2026
 
 echo "=== Serial ==="
-time python -u pi_fully_serial.py
+{ time python -u pi_fully_serial.py; } 2>&1
 
 echo "=== Fully parallel ==="
-time python -u pi_fully_parallel.py
+{ time python -u pi_fully_parallel.py; } 2>&1
 
 echo "=== Chunked parallel ==="
-time python -u pi_chunked_parallel.py
+{ time python -u pi_chunked_parallel.py; } 2>&1
