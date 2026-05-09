@@ -11,4 +11,4 @@
 source /dtu/projects/02613_2025/conda/conda_init.sh
 conda activate 02613_2026
 
-python -u blosc-job.py
+python -u broadcasting-1.py
