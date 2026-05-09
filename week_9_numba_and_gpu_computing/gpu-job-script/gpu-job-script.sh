@@ -2,10 +2,10 @@
 #BSUB -J gpu-job-script
 #BSUB -q c02613
 #BSUB -W 5
-#BSUB -n 1
+#BSUB -n 4
 #BSUB -gpu "num=1:mode=exclusive_process"
 #BSUB -R "rusage[mem=2GB]"
-#BSUB -r "span[hosts=1]"
+#BSUB -R "span[hosts=1]"
 #BSUB -o gpu-job-script_%J.out
 #BSUB -e gpu-job-script_%J.err
 
