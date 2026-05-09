@@ -1,12 +1,11 @@
 #! /bin/bash
-#BSUB -J job-arrays-1
+#BSUB -J job-arrays-1[1-10]
 #BSUB -q hpc
 #BSUB -W 5
 #BSUB -n 1
 #BSUB -R "rusage[mem=512MB]"
-#BSUB -R "select[model == XeonE5_2660v3]"
-#BSUB -o job-arrays-1_%J.out
-#BSUB -e job-arrays-1_%J.err
+#BSUB -R "span[hosts=1]"
+#BSUB -o job-arrays-1_%J_%I.out
+#BSUB -e job-arrays-1_%J_%I.err
 
-source /dtu/projects/02613_2025/conda/conda_init.sh
-conda activate 02613_2026
+echo "array index: $LSB_JOBINDEX"
