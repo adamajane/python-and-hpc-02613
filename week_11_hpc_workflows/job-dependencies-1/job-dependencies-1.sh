@@ -4,6 +4,7 @@
 #BSUB -W 5
 #BSUB -n 1
 #BSUB -R "rusage[mem=512MB]"
+#BSUB -R "span[hosts=1]"
 #BSUB -w "done(1234567)"
 #BSUB -o job-dependencies-1_%J.out
 #BSUB -e job-dependencies-1_%J.err
