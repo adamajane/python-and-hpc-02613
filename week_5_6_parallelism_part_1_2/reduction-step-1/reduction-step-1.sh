@@ -10,3 +10,5 @@
 
 source /dtu/projects/02613_2025/conda/conda_init.sh
 conda activate 02613_2026
+
+python reduction_step_1.py /dtu/projects/02613_2025/data/celeba/celeba_200.npy
